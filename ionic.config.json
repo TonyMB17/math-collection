@@ -1,0 +1,8 @@
+{
+  "name": "math collection",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "103c05a3"
+}
