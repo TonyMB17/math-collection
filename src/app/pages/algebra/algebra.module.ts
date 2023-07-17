@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { AlgebraPageRoutingModule } from './algebra-routing.module';
 
 import { AlgebraPage } from './algebra.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AlgebraPageRoutingModule
+    AlgebraPageRoutingModule, 
+    ComponentsModule
   ],
-  declarations: [AlgebraPage]
+  declarations: [AlgebraPage],
 })
 export class AlgebraPageModule {}

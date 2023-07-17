@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color="medium" (click)="cancel()">Cerrar</ion-button>
+    </ion-buttons>
+    <ion-title>{{titulo}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list lines="none" *ngFor="let values of datos">
+  <ion-card>          
+    <ion-card-header>
+      <ion-card-title>{{values.title}}</ion-card-title>
+    </ion-card-header>
+    <img alt="Formula random" [src]="values.src"/>
+    <ion-card-content>
+      {{values.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-list>
+</ion-content>
