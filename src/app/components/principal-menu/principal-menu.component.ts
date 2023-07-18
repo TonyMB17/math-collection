@@ -12,6 +12,7 @@ export class PrincipalMenuComponent  implements OnInit {
   public appPages = [
     { title: 'HOME', url: 'home', icon: 'home' },
     { title: 'Algebra', url: 'algebra', icon: 'calculator' },
+    { title: 'Aritmetica', url: 'aritmetica', icon: 'calculator' },
     { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
     { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },

@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'algebra',
     loadChildren: () => import('./pages/algebra/algebra.module').then( m => m.AlgebraPageModule)
   },
+  {
+    path: 'aritmetica',
+    loadChildren: () => import('./pages/aritmetica/aritmetica.module').then( m => m.AritmeticaPageModule)
+  },
 
 
 
