@@ -1,35 +1,73 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, ViewChild} from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalComponent } from 'src/app/components/modal/modal.component';
 
 @Component({
   selector: 'app-algebra',
   templateUrl: './algebra.page.html',
   styleUrls: ['./algebra.page.scss'],
 })
-export class AlgebraPage implements OnInit {
-
-  isModalOpen = false;
-
-  setOpen(isOpen: boolean) {
-    this.isModalOpen = isOpen;
-  }
-
-  pageTitle!: string;
+export class AlgebraPage implements OnInit {  
 
   public formulas = [
-    { title: 'Propiedad de exponentes', url: 'home', icon: 'home' },
-    { title: 'Prop. de radicales', url: 'algebra', icon: 'calculator' },
-    { title: 'Polinomios', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Productos', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Factorizacion', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Teorema del binomio', url: '/folder/archived', icon: 'archive' },
-    { title: 'Fracciones algebraicas', url: '/folder/trash', icon: 'trash' },
-    { title: 'Ecuaciones lineales', url: '/folder/spam', icon: 'warning' },    
+    { 
+      title: 'Nombre del tema 1', 
+      data: [
+        { 
+          title: 'Nombre de la formula 1.1', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.2', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.3', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 2', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
   ];
 
-  constructor() { }
+  constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
-    this.pageTitle = 'Algebra';
+    
+  }
+
+  async openModal(key: number) {
+    const modal = await this.modalCtrl.create({
+      component: ModalComponent,
+      componentProps:
+      {
+        'titulo': this.formulas[key].title,
+        'datos': this.formulas[key].data
+      }
+    });
+    modal.present();
   }
   
 }
