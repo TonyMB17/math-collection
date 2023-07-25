@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'fisica',
     loadChildren: () => import('./pages/fisica/fisica.module').then( m => m.FisicaPageModule)
   },
+  {
+    path: 'extra',
+    loadChildren: () => import('./pages/extra/extra.module').then( m => m.ExtraPageModule)
+  },
 
 
 
