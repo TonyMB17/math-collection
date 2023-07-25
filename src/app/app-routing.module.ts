@@ -22,6 +22,22 @@ const routes: Routes = [
     path: 'aritmetica',
     loadChildren: () => import('./pages/aritmetica/aritmetica.module').then( m => m.AritmeticaPageModule)
   },
+  {
+    path: 'trigonometria',
+    loadChildren: () => import('./pages/trigonometria/trigonometria.module').then( m => m.TrigonometriaPageModule)
+  },
+  {
+    path: 'geometria',
+    loadChildren: () => import('./pages/geometria/geometria.module').then( m => m.GeometriaPageModule)
+  },
+  {
+    path: 'estadistica',
+    loadChildren: () => import('./pages/estadistica/estadistica.module').then( m => m.EstadisticaPageModule)
+  },
+  {
+    path: 'fisica',
+    loadChildren: () => import('./pages/fisica/fisica.module').then( m => m.FisicaPageModule)
+  },
 
 
 
