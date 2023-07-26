@@ -12,13 +12,13 @@ export class PrincipalMenuComponent  implements OnInit {
   public appPages = [
     { title: 'HOME', url: 'home', icon: 'home' },
     { title: 'Algebra', url: 'algebra', icon: 'calculator' },
-    { title: 'Aritmetica', url: 'aritmetica', icon: 'calculator' },
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },    
+    { title: 'Aritmetica', url: 'aritmetica', icon: 'add' },
+    { title: 'Estadistica', url: 'estadistica', icon: 'analytics' },
+    { title: 'Fisica', url: 'fisica', icon: 'magnet' },
+    { title: 'Geometria', url: 'geometria', icon: 'diamond' },
+    { title: 'Trigonometria', url: 'trigonometria', icon: 'chevron-back' },
+     { title: 'Acerca de', url: 'extra', icon: 'bookmarks' },
+    // { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
   
   constructor() { }

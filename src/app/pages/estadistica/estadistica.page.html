@@ -1,0 +1,12 @@
+<app-header title="Estadistica"></app-header>
+
+<ion-content class="ion-padding">
+  <ion-list lines="none" *ngFor="let values of formulas; let key=index">
+    <ion-item>
+      <ion-button (click)="openModal(key)" expand="block" color="danger" shape="round">
+        {{values.title}}
+        <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+      </ion-button>
+    </ion-item>   
+  </ion-list>  
+</ion-content>
