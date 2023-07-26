@@ -1,12 +1,19 @@
 import { Component, OnInit, ViewChild} from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-algebra',
   templateUrl: './algebra.page.html',
   styleUrls: ['./algebra.page.scss'],
 })
+
+@Injectable(
+  {
+    providedIn: 'root'
+  })
+  
 export class AlgebraPage implements OnInit {  
 
   public formulas = [
@@ -303,5 +310,9 @@ export class AlgebraPage implements OnInit {
       audio.load();
       audio.play();
     }
+
+  getFormula(){
+    return this.formulas;
+  }
   
 }

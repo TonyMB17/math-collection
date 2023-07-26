@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 
@@ -8,6 +8,12 @@ import { ModalComponent } from 'src/app/components/modal/modal.component';
   templateUrl: './aritmetica.page.html',
   styleUrls: ['./aritmetica.page.scss'],
 })
+
+@Injectable(
+  {
+    providedIn: 'root'
+  })
+  
 export class AritmeticaPage implements OnInit {
 
   public formulas = [
@@ -532,4 +538,7 @@ export class AritmeticaPage implements OnInit {
       audio.play();
     }
 
+    getFormula(){
+      return this.formulas;
+    }
 }

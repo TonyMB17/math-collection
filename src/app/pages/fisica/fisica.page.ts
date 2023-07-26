@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 
@@ -7,6 +7,12 @@ import { ModalComponent } from 'src/app/components/modal/modal.component';
   templateUrl: './fisica.page.html',
   styleUrls: ['./fisica.page.scss'],
 })
+
+@Injectable(
+  {
+    providedIn: 'root'
+  })
+  
 export class FisicaPage implements OnInit {
 
   public formulas = [
@@ -76,5 +82,9 @@ export class FisicaPage implements OnInit {
     audio.src = '../../../assets/sounds/Click.mp3'; // Asegúrate de ajustar la ruta del archivo de audio según su ubicación en tu proyecto
     audio.load();
     audio.play();
+  }
+
+  getFormula(){
+    return this.formulas;
   }
 }
