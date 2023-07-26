@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { AritmeticaPageRoutingModule } from './aritmetica-routing.module';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 import { AritmeticaPage } from './aritmetica.page';
 
@@ -13,6 +14,7 @@ import { AritmeticaPage } from './aritmetica.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     AritmeticaPageRoutingModule
   ],
   declarations: [AritmeticaPage]

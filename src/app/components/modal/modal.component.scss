@@ -1,5 +1,88 @@
-.list-md{
-    background: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
+/* modal.component.scss */
+ion-content.content-list{
+    --background: url('../../../assets/fondos/FondoModal2.PNG');    
+
+}
+/* Estilos para el encabezado */
+ion-toolbar {
+  --background: #3498db; /* Cambiar el color de fondo del encabezado */
+  --color: #fff; /* Cambiar el color del texto del encabezado */
+
+  ion-title {
+    font-size: 20px;
+    //font-weight: bold;
+  }
+}
+
+/* Estilos para el contenido */
+
+ion-content.content-list {
+  ion-list{
+    --background: #3498db00; //aqui pinto
+    background-color: #d1d1d100;
+    //border-radius: 2em;
+  }
+  ion-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 15px;
+    --background: #3498db44; //aqui pinto
+    ion-card-header {
+      background-color: #3498db; /* Cambiar el color de fondo del encabezado del card */
+      --color: #fff; /* Cambiar el color del texto del encabezado del card */
+      padding: 15px;
+    }
+
+    ion-card-title {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    ion-card-content {
+      font-size: 16px;
+      color: #333; /* Cambiar el color del texto del contenido del card */
+      padding: 15px;
+    }
+  }
+}
+
+/* Estilos para el botón "Cerrar" */
+/* modal.component.scss */
+
+/* Estilos para el botón "Cerrar" y "Cancelar" */
+ion-button[color="medium"] {
+    color: #fff; /* Cambiar el color del texto a blanco */
+    background-color: #3498db; /* Cambiar el color de fondo del botón "Cerrar" */
+    border-radius: 20px;
+    margin: 15px auto;
+    display: block;
+    //width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos adicionales para el botón "Cancelar" */
+  ion-button[color="medium"].alert-button {
+    color: #fff; /* Cambiar el color del texto a blanco */
+    background-color: #e74c3c; /* Cambiar el color de fondo del botón "Cancelar" */
+  }
+
+.btn-cancelar ion-icon {
+  font-size: 24px; /* Tamaño del icono */
+  color: red; /* Color del icono (puedes cambiarlo a tu preferencia) */
+}
+  
+//
+.content-description{
+  color: #564e4e;
 }

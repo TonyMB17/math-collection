@@ -59,6 +59,7 @@ export class AlgebraPage implements OnInit {
   }
 
   async openModal(key: number) {
+    this.playClickSound();
     const modal = await this.modalCtrl.create({
       component: ModalComponent,
       componentProps:
@@ -69,5 +70,13 @@ export class AlgebraPage implements OnInit {
     });
     modal.present();
   }
+
+    // Función para reproducir el sonido cuando se hace clic en el botón
+    playClickSound(): void {
+      const audio = new Audio();
+      audio.src = '../../../assets/sounds/Click.mp3'; // Asegúrate de ajustar la ruta del archivo de audio según su ubicación en tu proyecto
+      audio.load();
+      audio.play();
+    }
   
 }

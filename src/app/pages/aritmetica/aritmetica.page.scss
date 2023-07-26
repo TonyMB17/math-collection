@@ -1,0 +1,109 @@
+// pagina.component.scss
+.background-image {
+  --background: url('../../../assets/fondos/Fondo Aritmetica.jpg');    
+  //--background: url('https://png.pngtree.com/thumb_back/fh260/back_our/20200730/ourmid/pngtree-original-blackboard-arithmetic-graphics-background-png-image_376987.jpg');    
+  
+}
+.lista-botones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+  
+    ion-button {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      //background-color: #007bff;
+      color: #ffffff;
+      border-radius: 10px;
+  
+      // Aplicar la animación al contenido del botón
+      span {
+        text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto es demasiado largo */
+        white-space: normal; /* Permitir que el texto se rompa en varias líneas */
+        word-break: break-all; /* Romper palabras en cualquier punto si exceden el ancho del botón */
+        display: flex;
+      }
+
+      // Aplicar la animación de efecto de onda al botón
+    animation: waveAnimation 2s ease-in-out infinite;
+
+      @keyframes waveAnimation {
+        0% {
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 0 30px rgba(76, 125, 177, 0.5);
+        }
+        50% {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 60px rgba(84, 100, 117, 0.7);
+        }
+        100% {
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 0 30px rgba(140, 151, 164, 0.5);
+        }
+      }
+    }
+  }
+  
+//Para los titulos de los temas
+/* Estilos para el h2 con animación */
+h2 {
+  /* Estilos para el separador */
+  position: relative;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: black;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 50px);
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+    animation: fadeInOutAnimation 2s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  &::before {
+    left: -5px;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    right: -5px;
+    transform: translateY(-50%);
+  }
+
+  @keyframes fadeInOutAnimation {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Animación para el texto */
+  animation: rotateText 20s linear infinite;
+
+  @keyframes rotateText {
+    0%, 100% {
+      transform: rotateX(0);
+    }
+    5%, 95% {
+      transform: rotateX(360deg);
+    }
+  }
+}
+  .botones-aritmetica{
+    --background: #0facd8a9;
+  }
