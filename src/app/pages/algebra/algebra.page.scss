@@ -108,4 +108,40 @@ h2 {
     .botones-algebra{
         --background: #3bd268d3;
     }
+
+    ion-button.ver-mas-button {
+      /* Aplicar estilos específicos al botón "Ver mas" */
+      width: 100%; /* El ancho será el 100% menos el doble del padding (20px a cada lado) */
+      height: 40px; /* Ajusta la altura deseada */
+      line-height: 40px; /* Alinea el texto verticalmente en el centro */
+      font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */
+      // background-color: #007bff;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      // cursor: pointer;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      text-decoration: none; /* Elimina el subrayado del enlace */
+      margin: 10px 0; /* Ajusta el margen superior e inferior según tus preferencias */
+      margin-top: 1.5em;
+      /* Establecer un gradiente de fondo para que el texto sea más legible en el desplazamiento */
+      //background: linear-gradient(90deg, rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7) 60px, #007bff 60px);
+    
+      /* Aplicar la animación de efecto de onda al botón */
+      animation: waveAnimation 2s ease-in-out infinite;
+    
+      @keyframes waveAnimation {
+        0% {
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 0 30px rgba(76, 125, 177, 0.5);
+        }
+        50% {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 60px rgba(84, 100, 117, 0.7);
+        }
+        100% {
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 0 30px rgba(140, 151, 164, 0.5);
+        }
+      }
+    }
       

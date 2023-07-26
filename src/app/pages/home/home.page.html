@@ -49,7 +49,37 @@
     <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
   </ion-button>
 </div>
-<ion-button class="ver-mas-button botones-geometria" href="http://localhost:4200/algebra">Ver mas</ion-button>
+<ion-button class="ver-mas-button botones-geometria" href="http://localhost:4200/geometria">Ver mas</ion-button>
+
+<!-- Para la sección de Estadistica -->
+<h2 class="wave-effect">Estadistica</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-estadistica" *ngFor="let values of categoriasFormulas['Estadistica']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-estadistica" href="http://localhost:4200/estadistica">Ver mas</ion-button>
+
+<!-- Para la sección de Trigonometria -->
+<h2 class="wave-effect">Trigonometria</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-trigonometria" *ngFor="let values of categoriasFormulas['Trigonometria']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-trigonometria" href="http://localhost:4200/trigonometria">Ver mas</ion-button>
+
+<!-- Para la sección de Trigonometria -->
+<h2 class="wave-effect">Fisica</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-fisica" *ngFor="let values of categoriasFormulas['Fisica']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-fisica" href="http://localhost:4200/fisica">Ver mas</ion-button>
 
   <!--mas abajo van mas cursos-->
 </ion-content>

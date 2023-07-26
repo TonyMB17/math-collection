@@ -671,25 +671,259 @@ export class HomePage implements OnInit {
         },
       ] 
     },
+    //Estadistica
+    { 
+      title: 'Nombre del tema 1 Estadistica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 1.1', 
+          src: "https://www.aprenderinglesrapidoyfacil.com/wp-content/uploads/2023/04/Figuras-geometricas-en-ingles.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.2', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.3', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 2 Estadistica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://tienda.anisapr.com/cdn/shop/products/260cd64b74d1d8efe7a4544428800f36_1024x1024@2x.jpg?v=1564681179", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 3 Estadistica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 4 Estadistica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/17379797/image/cae39b4ea5ba8ae3ee6e33e3121a0551", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    //Trigonometria
+    { 
+      title: 'Nombre del tema 1 Trigonometria', 
+      data: [
+        { 
+          title: 'Nombre de la formula 1.1', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.2', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.3', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 2 Trigonometria', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://tienda.anisapr.com/cdn/shop/products/260cd64b74d1d8efe7a4544428800f36_1024x1024@2x.jpg?v=1564681179", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 3 Trigonometria', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 4 Trigonometria', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/17379797/image/cae39b4ea5ba8ae3ee6e33e3121a0551", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    //Fisica
+    { 
+      title: 'Nombre del tema 1 Fisica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 1.1', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.2', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 1.3', 
+          src: "https://cemat.edu.pe/wp-content/uploads/2021/11/curso-fisica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 2 Fisica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://tienda.anisapr.com/cdn/shop/products/260cd64b74d1d8efe7a4544428800f36_1024x1024@2x.jpg?v=1564681179", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://cemat.edu.pe/wp-content/uploads/2021/11/curso-fisica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://economipedia.com/wp-content/uploads/estadistica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 3 Fisica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://cemat.edu.pe/wp-content/uploads/2021/11/curso-fisica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://economipedia.com/wp-content/uploads/image-463.png", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },
+    { 
+      title: 'Nombre del tema 4 Fisica', 
+      data: [
+        { 
+          title: 'Nombre de la formula 2.1', 
+          src: "https://cemat.edu.pe/wp-content/uploads/2021/11/curso-fisica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.2', 
+          src: "https://p.calameoassets.com/130321132637-71f8f9d457841c8e417d3fc29e7df855/p1.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+        { 
+          title: 'Nombre de la formula 2.3', 
+          src: "https://cemat.edu.pe/wp-content/uploads/2021/11/curso-fisica.jpg", 
+          description: "descripcion de la fornula 1"
+        },
+      ] 
+    },    
   ];
-
-  // async openModal(key: number) {
-  //   const modal = await this.modalCtrl.create({
-  //     component: ModalComponent,
-  //     componentProps:
-  //     {
-  //       'titulo': this.formulas[key].title,
-  //       'datos': this.formulas[key].data
-  //     }
-  //   });
-  //   modal.present();
-  // }
 
   //mis categorias de cursos
   categoriasFormulas: any = {
     'Aritmetica': this.formulas.slice(0, 4),
     'Algebra': this.formulas.slice(10, 14),
     'Geometria': this.formulas.slice(14, 18),
+    'Estadistica': this.formulas.slice(18, 22),
+    'Trigonometria': this.formulas.slice(22, 26),
+    'Fisica': this.formulas.slice(26, 30),
     // Otras categorías con sus respectivas fórmulas
   };
 
