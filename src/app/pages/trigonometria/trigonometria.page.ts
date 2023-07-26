@@ -324,6 +324,7 @@ export class TrigonometriaPage implements OnInit {
   }
 
   async openModal(key: number) {
+    this.playClickSound();
     const modal = await this.modalCtrl.create({
       component: ModalComponent,
       componentProps:
@@ -334,4 +335,12 @@ export class TrigonometriaPage implements OnInit {
     });
     modal.present();
   }
+
+  playClickSound(): void {
+    const audio = new Audio();
+    audio.src = '../../../assets/sounds/Click.mp3'; // Asegúrate de ajustar la ruta del archivo de audio según su ubicación en tu proyecto
+    audio.load();
+    audio.play();
+  }
+
 }

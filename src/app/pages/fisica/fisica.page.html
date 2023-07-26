@@ -1,6 +1,6 @@
 <app-header title="Fisica"></app-header>
 
-<ion-content class="ion-padding">
+<!-- <ion-content class="ion-padding">
   <ion-list lines="none" *ngFor="let values of formulas; let key=index">
     <ion-item>
       <ion-button (click)="openModal(key)" expand="block" color="danger" shape="round">
@@ -9,4 +9,18 @@
       </ion-button>
     </ion-item>   
   </ion-list>  
+</ion-content> -->
+
+<ion-content class="ion-padding background-image">
+  <h2 class="wave-effect">Fisica</h2>
+
+  <div class="lista-botones">
+    <ion-button class="botones-fisica" *ngFor="let values of formulas; let key = index" (click)="openModal(key)"><span>{{ values.title }}</span>
+      <!-- <img src="https://f4.bcbits.com/img/0022763032_10.jpg" alt="Icono"> Agrega la ruta de la imagen -->
+      
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-button>
+  </div>
+  <ion-button class="ver-mas-button botones-fisica" href="http://localhost:4200/home">Ir a Home</ion-button>
+
 </ion-content>

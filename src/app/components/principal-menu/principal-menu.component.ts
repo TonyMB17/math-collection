@@ -12,12 +12,12 @@ export class PrincipalMenuComponent  implements OnInit {
   public appPages = [
     { title: 'HOME', url: 'home', icon: 'home' },
     { title: 'Algebra', url: 'algebra', icon: 'calculator' },
-    { title: 'Aritmetica', url: 'aritmetica', icon: 'calculator' },
-    { title: 'Estadistica', url: 'estadistica', icon: 'calculator' },
-    { title: 'Fisica', url: 'fisica', icon: 'calculator' },
-    { title: 'Geometria', url: 'geometria', icon: 'calculator' },
-    { title: 'Trigonometria', url: 'trigonometria', icon: 'calculator' },
-    // { title: 'Trash', url: '/folder/trash', icon: 'trash' },
+    { title: 'Aritmetica', url: 'aritmetica', icon: 'add' },
+    { title: 'Estadistica', url: 'estadistica', icon: 'analytics' },
+    { title: 'Fisica', url: 'fisica', icon: 'magnet' },
+    { title: 'Geometria', url: 'geometria', icon: 'diamond' },
+    { title: 'Trigonometria', url: 'trigonometria', icon: 'chevron-back' },
+     { title: 'Acerca de', url: 'extra', icon: 'bookmarks' },
     // { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
   

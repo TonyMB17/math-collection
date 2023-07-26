@@ -1,65 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ pageTitle }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content class="ion-padding">
-  <ion-list lines="none" *ngFor="let values of formulas">
-    <ion-item>
-      <ion-button color="danger" shape="round" (click)="setOpen(true)">
-        {{values.title}}
-        <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
-      </ion-button>
-    </ion-item>   
-  </ion-list>
 
-  <ion-modal [isOpen]="isModalOpen">
-    <ng-template>
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Modal</ion-title>
-          <ion-buttons slot="end">
-            <ion-button (click)="setOpen(false)">X</ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
+<app-header title="Aritmetica"></app-header>
 
-        <ion-card>          
-          <ion-card-header>
-            <ion-card-title>Alguna Formula Random</ion-card-title>
-          </ion-card-header>
-          <img alt="Formula random" src="https://economipedia.com/wp-content/uploads/image-463.png" />
-          <ion-card-content>
-            
-          </ion-card-content>
-        </ion-card>
+<!-- pagina.component.html -->
 
-        <ion-card>          
-          <ion-card-header>
-            <ion-card-title>Alguna Formula Random</ion-card-title>
-          </ion-card-header>
-          <img alt="Formula random" src="https://economipedia.com/wp-content/uploads/image-463.png" />
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more, nothing less.
-          </ion-card-content>
-        </ion-card>
+<ion-content class="ion-padding background-image">
+  <h2 class="wave-effect">Aritmetica</h2>
 
-        <ion-card>          
-          <ion-card-header>
-            <ion-card-title>Alguna Formula Random</ion-card-title>
-          </ion-card-header>
-          <img alt="Formula random" src="https://economipedia.com/wp-content/uploads/image-463.png" />
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more, nothing less.
-          </ion-card-content>
-        </ion-card>
+  <div class="lista-botones">
+    <ion-button class="botones-aritmetica" *ngFor="let values of formulas; let key = index" (click)="openModal(key)"><span>{{ values.title }}</span>
+      <!-- <img src="https://f4.bcbits.com/img/0022763032_10.jpg" alt="Icono"> Agrega la ruta de la imagen -->
+      
+      <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+    </ion-button>
+  </div>
 
-      </ion-content>
-    </ng-template>
-  </ion-modal>
+  <ion-button class="ver-mas-button botones-aritmetica" href="http://localhost:4200/home">Ir a Home</ion-button>
 
 </ion-content>

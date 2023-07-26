@@ -1,19 +1,86 @@
 <app-header title="Home"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">wazaaaaa</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>wazaza</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card>
+<ion-content class="ion-padding background-image">
+    <!--Busacdor-->
+    <ion-searchbar class="fixed-searchbar" placeholder="Buscar temas" [(ngModel)]="searchQuery"></ion-searchbar>
+
+    <!-- Resultados del buscador -->
+    <ion-card  *ngIf="searchQuery">
+      <ion-card-header >
+        Resultados de búsqueda
+      </ion-card-header>
+      <ion-list class="result-content" *ngIf="filteredFormulas.length > 0">
+        <ion-item *ngFor="let formula of filteredFormulas; let key = index" (click)="openModal(formula.title, key)">
+          <ion-button class="button-primary btn-result">
+            <span>{{ formula.title }}</span>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+      <ion-card-content *ngIf="filteredFormulas.length === 0">
+        No se encontraron resultados.
+      </ion-card-content>
+    </ion-card>
+    
+<!-- Para la sección de Aritmetica -->
+<h2 class="wave-effect">Aritmetica</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-aritmetica" *ngFor="let values of categoriasFormulas['Aritmetica']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-aritmetica" href="http://localhost:4200/aritmetica" (click)="playClickSound()">Ver mas</ion-button>
+
+<!-- Para la sección de Algebra -->
+<h2 class="wave-effect">Algebra</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-algebra" *ngFor="let values of categoriasFormulas['Algebra']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-algebra" href="http://localhost:4200/algebra">Ver mas</ion-button>
+
+<!-- Para la sección de Geometria -->
+<h2 class="wave-effect">Geometria</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-geometria" *ngFor="let values of categoriasFormulas['Geometria']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-geometria" href="http://localhost:4200/geometria">Ver mas</ion-button>
+
+<!-- Para la sección de Estadistica -->
+<h2 class="wave-effect">Estadistica</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-estadistica" *ngFor="let values of categoriasFormulas['Estadistica']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-estadistica" href="http://localhost:4200/estadistica">Ver mas</ion-button>
+
+<!-- Para la sección de Trigonometria -->
+<h2 class="wave-effect">Trigonometria</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-trigonometria" *ngFor="let values of categoriasFormulas['Trigonometria']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-trigonometria" href="http://localhost:4200/trigonometria">Ver mas</ion-button>
+
+<!-- Para la sección de Trigonometria -->
+<h2 class="wave-effect">Fisica</h2>
+<div class="lista-botones">
+  <ion-button class="button-primary botones-fisica" *ngFor="let values of categoriasFormulas['Fisica']; let key = index" (click)="openModal(values.title, key)">
+    <span>{{ values.title }}</span>
+    <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
+  </ion-button>
+</div>
+<ion-button class="ver-mas-button botones-fisica" href="http://localhost:4200/fisica">Ver mas</ion-button>
+
+  <!--mas abajo van mas cursos-->
 </ion-content>
+
