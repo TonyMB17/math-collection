@@ -32,8 +32,6 @@ export class HomePage implements OnInit {
     ) { }
 
   ngOnInit() {     
-    console.log(Object.keys(this.form).length)
-    console.log(this.f_Algebra)
   } 
 
   public f_Algebra = this.formulasAlgebra.getFormula();
