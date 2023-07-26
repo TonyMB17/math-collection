@@ -5,13 +5,14 @@
     <ion-searchbar class="fixed-searchbar" placeholder="Buscar temas" [(ngModel)]="searchQuery"></ion-searchbar>
 
     <!-- Resultados del buscador -->
-    <ion-card  *ngIf="searchQuery">
-      <ion-card-header >
+    <ion-card *ngIf="searchQuery">
+      <ion-card-header>
         Resultados de búsqueda
       </ion-card-header>
       <ion-list class="result-content" *ngIf="filteredFormulas.length > 0">
-        <ion-item *ngFor="let formula of filteredFormulas; let key = index" (click)="openModal(formula.title, key)">
-          <ion-button class="button-primary btn-result">
+        <ion-item *ngFor="let category of filteredFormulas">
+          <!-- <ion-label>{{ category.category }}</ion-label> -->
+          <ion-button class="button-primary btn-result" *ngFor="let formula of category.formulas; let key = index" (click)="openModal(formula.title, key)">
             <span>{{ formula.title }}</span>
           </ion-button>
         </ion-item>
