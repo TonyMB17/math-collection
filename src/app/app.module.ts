@@ -8,10 +8,14 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PrincipalMenuComponent } from './components/principal-menu/principal-menu.component'
 import { ModalComponent } from './components/modal/modal.component';
+import { NgxSpinnerModule } from 'ngx-spinner'; // Importa ngx-spinner
+import { SplashScreenComponent } from './splash-screen/splash-screen.component'; // Asegúrate de importar correctamente el componente
+
+//para
 
 @NgModule({
-  declarations: [AppComponent, PrincipalMenuComponent, ModalComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  declarations: [AppComponent, PrincipalMenuComponent, ModalComponent, SplashScreenComponent],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgxSpinnerModule.forRoot()],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

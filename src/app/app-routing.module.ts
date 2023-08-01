@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },  {
+  },
+  {
     path: 'algebra',
     loadChildren: () => import('./pages/algebra/algebra.module').then( m => m.AlgebraPageModule)
   },
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'extra',
     loadChildren: () => import('./pages/extra/extra.module').then( m => m.ExtraPageModule)
+  },
+  {
+    path: 'loading',
+    loadChildren: () => import('./loading/loading.module').then( m => m.LoadingPageModule)
   },
 
 

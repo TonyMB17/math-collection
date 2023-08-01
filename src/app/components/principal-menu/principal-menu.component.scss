@@ -117,3 +117,9 @@ ion-menu ion-content {
   ion-item.selected {
     --color: var(--ion-color-primary);
   }
+
+  a{
+    text-decoration:none;
+    color: white; 
+  }
+

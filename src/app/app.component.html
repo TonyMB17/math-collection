@@ -1,4 +1,10 @@
 <ion-app>
-	<app-principal-menu></app-principal-menu>
-	<ion-router-outlet id="main-content"></ion-router-outlet>
-</ion-app>
+	<!-- Mostrar el componente SplashScreenComponent solo por 5 segundos -->
+	<app-splash-screen *ngIf="showSplashScreen"></app-splash-screen>
+	<router-outlet *ngIf="showSplashScreen"></router-outlet>
+  
+	<!-- Mostrar el componente AppPrincipalMenu y el contenido de la página principal -->
+	<app-principal-menu *ngIf="showRouterOutlet"></app-principal-menu>
+	<ion-router-outlet id="main-content" *ngIf="showRouterOutlet"></ion-router-outlet>
+  </ion-app>
+  

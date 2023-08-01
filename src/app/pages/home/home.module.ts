@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { LoadingComponent } from 'src/app/loading/loading.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     HomePageRoutingModule,
     ComponentsModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, LoadingComponent],
+  providers: [LoadingComponent] // Agregar LoadingComponent como proveedor aquí
+
 })
 export class HomePageModule {}

@@ -7,6 +7,7 @@ import { TrigonometriaPage } from '../trigonometria/trigonometria.page';
 import { AritmeticaPage } from '../aritmetica/aritmetica.page';
 import { EstadisticaPage } from '../estadistica/estadistica.page';
 import { FisicaPage } from '../fisica/fisica.page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,7 @@ import { FisicaPage } from '../fisica/fisica.page';
 export class HomePage implements OnInit {
 
   public searchQuery = ''; 
+  public aux: string = '';
 
   public formulas: any = [];
 
@@ -28,7 +30,7 @@ export class HomePage implements OnInit {
     private formulasGeometria: GeometriaPage,
     private formulasTrigonometria: TrigonometriaPage,
     private formulasEstadistica: EstadisticaPage,
-    private formulasFisica: FisicaPage,
+    private formulasFisica: FisicaPage, private router: Router
     ) { }
 
   ngOnInit() {     
@@ -124,7 +126,20 @@ export class HomePage implements OnInit {
     const audio = new Audio();
     audio.src = '../../../assets/sounds/Click.mp3'; // Asegúrate de ajustar la ruta del archivo de audio según su ubicación en tu proyecto
     audio.load();
-    audio.play();
+    audio.play();   
+  }
+
+  async Loading(category: string) {
+    this.playClickSound();
+    this.aux = category;
+    // Redireccionar a la página "Pantalla"
+    this.router.navigateByUrl('/loading');
+
+    // Esperar 2 segundos antes de redireccionar a la página "Aritmética"
+    setTimeout(() => {
+      this.router.navigateByUrl(`/${category}`); // Reemplaza 'aritmetica' con la ruta de la página a la que deseas redireccionar
+    }, 1400);
+    this.aux = '';
   }
 
   

@@ -235,3 +235,48 @@ h2 {
   --background: #d80f0fa9;
 }
 
+  //para la pantalla de carga
+  // Definir variables
+  $loader-color: #007bff;
+  $loader-size: 50px;
+  $loader-border-width: 5px;
+  $loader-duration: 1.5s;
+  
+  // Estilos para la pantalla de carga
+  .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8); // Fondo semitransparente
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      // Estilos para el spinner/loader
+      .loader {
+          border: $loader-border-width solid $loader-color;
+          border-top: $loader-border-width solid transparent;
+          border-radius: 50%;
+          width: $loader-size;
+          height: $loader-size;
+          animation: spin $loader-duration linear infinite;
+  
+          // Centrar el loader horizontal y verticalmente
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+  
+      @keyframes spin {
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+  }
+

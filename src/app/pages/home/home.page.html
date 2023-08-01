@@ -1,5 +1,8 @@
 <app-header title="Home"></app-header>
 
+
+
+
 <ion-content class="ion-padding background-image">
     <!--Busacdor-->
     <ion-searchbar class="fixed-searchbar" placeholder="Buscar temas" [(ngModel)]="searchQuery"></ion-searchbar>
@@ -29,8 +32,9 @@
     <span>{{ values.title }}</span>
     <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
   </ion-button>
+  
 </div>
-<ion-button class="ver-mas-button botones-aritmetica" routerLink="/aritmetica" (click)="playClickSound()">Ver mas</ion-button>
+<ion-button class="ver-mas-button botones-aritmetica"  (click)="Loading('aritmetica')">Ver mas</ion-button>
 
 <!-- Para la sección de Algebra -->
 <h2 class="wave-effect">Algebra</h2>
@@ -40,7 +44,7 @@
     <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
   </ion-button>
 </div>
-<ion-button class="ver-mas-button botones-algebra" routerLink="/algebra" (click)="playClickSound()">Ver mas</ion-button>
+<ion-button class="ver-mas-button botones-algebra" (click)="Loading('algebra')">Ver mas</ion-button>
 
 <!-- Para la sección de Geometria -->
 <h2 class="wave-effect">Geometria</h2>
@@ -50,7 +54,7 @@
     <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
   </ion-button>
 </div>
-<ion-button class="ver-mas-button botones-geometria" routerLink="/geometria" (click)="playClickSound()">Ver mas</ion-button>
+<ion-button class="ver-mas-button botones-geometria" (click)="Loading('geometria')">Ver mas</ion-button>
 
 <!-- Para la sección de Estadistica -->
 <h2 class="wave-effect">Estadistica</h2>
@@ -60,7 +64,7 @@
     <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
   </ion-button>
 </div>
-<ion-button class="ver-mas-button botones-estadistica" routerLink="/estadistica" (click)="playClickSound()">Ver mas</ion-button>
+<ion-button class="ver-mas-button botones-estadistica" (click)="Loading('estadistica')">Ver mas</ion-button>
 
 <!-- Para la sección de Trigonometria -->
 <h2 class="wave-effect">Trigonometria</h2>
@@ -70,7 +74,7 @@
     <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
   </ion-button>
 </div>
-<ion-button class="ver-mas-button botones-trigonometria" routerLink="/trigonometria" (click)="playClickSound()">Ver mas</ion-button>
+<ion-button class="ver-mas-button botones-trigonometria" (click)="Loading('trigonometria')">Ver mas</ion-button>
 
 <!-- Para la sección de Trigonometria -->
 <h2 class="wave-effect">Fisica</h2>
@@ -80,7 +84,7 @@
     <!-- <ion-icon name="chevron-forward-outline" slot="end"></ion-icon> -->
   </ion-button>
 </div>
-<ion-button class="ver-mas-button botones-fisica" routerLink="/fisica" (click)="playClickSound()">Ver mas</ion-button>
+<ion-button class="ver-mas-button botones-fisica" (click)="Loading('fisica')">Ver mas</ion-button>
 
   <!--mas abajo van mas cursos-->
 </ion-content>

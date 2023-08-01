@@ -1,4 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { ModalComponent } from 'src/app/components/modal/modal.component';
 
@@ -254,7 +255,7 @@ export class EstadisticaPage implements OnInit {
     },
   ];
 
-  constructor(private modalCtrl: ModalController) { }
+  constructor(private modalCtrl: ModalController, private router: Router) { }
 
   ngOnInit() {
     
@@ -282,6 +283,17 @@ export class EstadisticaPage implements OnInit {
 
   getFormula(){
     return this.formulas;
+  }
+
+  async Loading() {
+    this.playClickSound();
+    // Redireccionar a la página "Pantalla"
+    this.router.navigateByUrl('/loading');
+
+    // Esperar 2 segundos antes de redireccionar a la página "Aritmética"
+    setTimeout(() => {
+      this.router.navigateByUrl('/home'); // Reemplaza 'aritmetica' con la ruta de la página a la que deseas redireccionar
+    }, 1000);
   }
 
 }

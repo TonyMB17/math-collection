@@ -17,7 +17,8 @@ export class PrincipalMenuComponent  implements OnInit {
     { title: 'Fisica', url: 'fisica', icon: 'magnet' },
     { title: 'Geometria', url: 'geometria', icon: 'diamond' },
     { title: 'Trigonometria', url: 'trigonometria', icon: 'chevron-back' },
-     { title: 'Acerca de', url: 'extra', icon: 'bookmarks' },
+    { title: 'Acerca de', url: 'extra', icon: 'bookmarks' },
+    //{ title: 'Acerca de', url: 'extra', icon: 'bookmarks' },
     // { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
   
